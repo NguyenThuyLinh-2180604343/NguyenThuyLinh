@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
+    <title>CV Web Design</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,69 +15,87 @@
             height: 100vh;
         }
 
-        .student-card {
-            width: 350px;
+        .cv-card {
+            width: 400px;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             text-align: center;
-        
             position: relative;
         }
 
-        .school-logo {
-            width: 80px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-
-        .student-card img.profile {
+        .cv-card img.profile {
             width: 120px;
             height: 120px;
-            border-radius: 20%;
+            border-radius: 50%;
             border: 3px solid #007bff;
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
-        .student-info {
+        .cv-info {
             margin-top: 15px;
         }
 
-        .student-info p {
+        .cv-info p {
             margin: 5px 0;
             font-size: 16px;
         }
 
-        .student-info .name {
+        .cv-info .name {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 22px;
             color: #007bff;
         }
 
-        .barcode {
-            margin-top: 10px;
+        .cv-info .skills {
+            margin-top: 15px;
+            font-size: 16px;
+            text-align: left;
+            padding: 0 20px;
         }
 
-        .barcode img {
-            width: 150px;
+        .cv-info .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cv-info .skills li {
+            margin: 5px 0;
+        }
+
+        .contact {
+            margin-top: 15px;
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="student-card">
-    
-        <img src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-6/461596325_1742240869860549_2134805932330450800_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEelwqkrguC4Baz0YmbaFAj60X65qgC8XDrRfrmqALxcIi8QPPjua3ca5SRSwIjjXIfjooeDDEzrZQ_umSd3c_B&_nc_ohc=kIRkG5-iHfQQ7kNvgEWY1GW&_nc_oc=Adg6DKqDyFnTqoO4Mel8YtSeDXP25gmj2nudvgEMcxFMhXwhkkQEQMuUYIR_0W4thIM&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=A4k1jLHK8SpXRABcmZzQLn1&oh=00_AYGm1jYELoR0jKOTBN2Jfqthy90yh5-O_g1ZS0ZnUI3jUA&oe=67D5D7F0" alt="Ảnh sinh viên" class="profile">
-        <div class="student-info">
-            <p class="name">Nguyễn Thùy Linh </p>
-<!--             <p><strong>Mã SV:</strong> 2180600140</p>
-            <p><strong>Lớp:</strong> 21DTHA5</p>
-            <p><strong>Email:</strong>thanhbinh@gmail.com</p> -->
+    <div class="cv-card">
+        <img src="profile.jpg" alt="Ảnh cá nhân" class="profile">
+        <div class="cv-info">
+            <p class="name">Nguyễn Thùy Linh</p>
+            <p>Web Designer</p>
+            
+            <div class="skills">
+                <p><strong>Kỹ năng:</strong></p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>UI/UX Design</li>
+                    <li>Responsive Design</li>
+                    <li>Adobe Photoshop, Figma</li>
+                    <li>SEO & Web Performance</li>
+                </ul>
+            </div>
+            
+            <div class="contact">
+                <p><strong>Liên hệ:</strong></p>
+                <p>Email: linhhnil26@gmail.com</p>
+                <p>Phone: 0359689967</p>
+            </div>
         </div>
-       
     </div>
 
 </body>
